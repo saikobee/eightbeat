@@ -1,0 +1,44 @@
+[Loop1]
++; D; E;
+C; -; B; A 4;
+B; +; C; D 4;
+-; B; A; G 4;
+A; B; +; C 4;
+-; A; G; F# 4;
+G; A; B 4;
++; C; C#; D;
+
+R; D; R; E 4;
+C; -; B; A 4;
++; F#; E; D 4;
+E; F#; G 4;
+D; -; B; +; C 4;
+
+[Song]
+tempo=144
+octave 4
+duration = 8
+
+play loop1
+-; B; A; G 4;
+F#; A; G;
+R; G; R; G;
+R 4+8;
+
+play loop1
+D; E; F# 4;
+G; A; G;
+R; G; R; G;
+
+R; G; R; G;
+G; Eb; F; G 4;
+A; Bb; +; C 4;
+-; Bb 4; A 4; G 4;
+F; F; D; Eb; F 4;
+G; A; Bb 4;
+A 4; G 4; F 4;
+F; F; Db; Eb; F 4;
+G; Ab; Bb 4;
+Ab 4; G 4; F 4;
+F;
+play loop1

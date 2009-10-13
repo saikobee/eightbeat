@@ -1,0 +1,16 @@
+octave 4
+C 4; D 5; E 6; F 7; G 8;
+
+octave up;
+C 4; D 5; E 6; F 7; G 8
+
+OCTAve DoWn
+C 4; D 5; E 6; F 7; G 8;
+
+OCTAVE DOWN;
+C 4; D 5; E 6; F 7; G 8
+
+octave = 2
+C, 4; D, 5; E, 6; F3 7; G3,8
+
+C 4; +; C 4; +; C 4; ++; C 4; - - +- +-; C 4

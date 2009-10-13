@@ -1,0 +1,19 @@
+# Original song by Brian Mock
+# Copyright GNU GPL
+duration = 16
+tempo    = 125
+
+loop Intro
+
+[Intro]
+octave = 0; C; +; C; +; C; +; C; +; C; +;
+octave = 0; A; +; A; +; A; +; A; +; A; +;
+octave = 0; R 4; +;
+octave = 0; A; +; A; +; A; +; A; +; A; +;
+octave = 0; C; +; C; +; C; +; C; +; C; +;
+octave = 0; R 4; +;
+octave = 0; C; +; C; +; C; +; C; +; C; +;
+octave = 0; D; +; D; +; D; +; D; +; D; +;
+octave = 0; E; +; E; +; E; +; E; +; E; +;
+octave = 0; F; +; F; +; F; +; F; +; F; +;
+octave = 0; R 4; +;

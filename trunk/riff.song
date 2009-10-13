@@ -1,0 +1,12 @@
+[ Riff #1 ]
+C; D; F; G
+F; E; D; C
+
+[ Song ]
+duration =  16
+tempo    = 120
+octave = 3; play Riff #1
+octave = 4; play Riff #1
+octave = 5; play Riff #1
+octave = 6; play Riff #1
+octave = 7; play Riff #1
