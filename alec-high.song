@@ -1,0 +1,135 @@
+# Song: Patty no Theme
+#    from Lucky Star
+# Artist: Kousaki Satoru
+#
+# 8-beat transcription based
+#    on piano arrangement by
+#    Joshua C. Agarrado
+
+[in1]
+duration = 8
+F 4; A; +; C; -; Eb 4;
+G; F 8+16+32; R 32; F; A; +; C;
+-; Eb 4; G 4; F 4; A; +; C;
+
+[in2]
+duration = 32
+F; A 32+16+8;
+A; +; C 16+32;
+C; F 16+32;
+-; Eb 32; G 32+16+8;
+G; Bb 32+16;
+F; A 32+16+8;
+
+F; A 32+16;
+A; +; C 16+32;
+C; F 16+32;
+-; Eb 32; G 32+16+8;
+G; Bb 32+16+8;
+
+F; A 32+16+8;
+A; +; C 16+32;
+C; F 16+32;
+
+
+[intro]
+play in1
+-; Eb 4; G; F;
+R 4;
+
++; Eb; -; G; R;
++; Eb; -; G; R;
+-;
+play in1
+-; Eb; C; G; F;
+R 2+8
+
+duration = 8
+-; F; -; Eb; +; Eb;
++;
+play in2
+-; Eb; G 32+16+8;
+G; Bb 32+16;
+F; A 32+16;
+R 16;
+
+duration = 8
+-; F; +; F; -; F;
+Eb; +; Eb; -; Eb; +; Eb;
+play in2
+-; Eb; G 32+16;
+C; Eb 32+16;
+G; Bb 32+16;
+F; A 32+16;
+
+[m1]
+-; F 64; Bb 64; +; D;
+C#; D; C#;
+-; Bb 64; +; D;
+C#; D; C#;
+-; G 64; +; D;
+C#; D; D# 32;
+E 32+16+8
+D; C; -; B;
+
+A 64; +; C;
+-; B; +; C; -; B;
+A 64; +; C;
+-; B; +; C; -; B;
+F# 64; +; C;
+-; B; +; C; C# 32;
+D 32+16+8;
+C; -; Bb; A;
+
+G 64; Bb;
+A; Bb; A; Bb; A; Bb; A;
+E 64; Bb;
+A; Bb; B 32;
+G 64; +; C 32+16+8
+-; Bb; A; G;
+
+[main]
+duration = 8
+-;
+F; -; F;
+++; A; Bb; +; C
+play m1
+F 64; A;
+G#; A; G#;
+F 64; A;
+Bb; B; +; C;
+R 4;
+
++; A 16; R 16;
+--; F; A; +; C 4;
+play m1
+F 4; A; +; C;
+-; Eb; C; G; F
+
+[outro]
+duration = 8
+--; F; +; F; -; F;
+Eb; +; Eb; -; Eb; +; Eb;
+++;
+duration = 32
+F; +; F 32+16+8; -;
+A; +; A 32+16; -;
++; C; +; C 32+16; -;
+-; Eb; +; Eb 32+16; -;
+C; +; C 32+16; -;
+G; +; G 32+16; -;
+F; +; F 32+16; -;
+
+
+[Song]
+tempo = 155
+octave 3
+
+play intro
+R 4+8;
+
+repeat 1 main
+R 8;
+
+play outro
+

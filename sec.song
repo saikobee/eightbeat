@@ -1,0 +1,43 @@
+# Author: Brian Mock
+# Purpose: Test of song section syntax
+
+[ Intro ]
+duration = 8
+C; D; E; F; G; A; B
+
+[ Main ]
+duration = 48
+C; C; C; R 16
+D; D; D; R 16
+E; E; E; R 16
+F; F; F; R 16
+G; G; G; R 16
+A; A; A; R 16
+B; B; B; R 16
+A; A; A; R 16
+G; G; G; R 16
+F; F; F; R 16
+E; E; E; R 16
+D; D; D; R 16
+
+[ Interlude ]
+duration = 32
++; C; -; C; +; C; -; C
+
+[ Loop ]
+tempo  = 240
+octave =   3
+play Main
+tempo = 120
+octave = 4
+repeat 2 Interlude
+
+[ Song ]
+tempo = 480
+octave = 4; play Intro; R 8
+octave = 5; play Intro; R 8
+octave = 6; play Intro; R 8
+octave = 6; play Main;  R 8
+
+repeat 2 Interlude; R 8
+loop Loop

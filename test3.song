@@ -1,0 +1,5 @@
+duration 8
+C; D; E
+
+duration = 32
+C; D; E; duration=2; G

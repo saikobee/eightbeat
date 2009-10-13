@@ -1,0 +1,42 @@
+# Brian Mock
+# Just a song that goes really fast
+
+[ Riff 1 ]
+C; D; A; B
+
+[ Riff 2 ]
+F; G; E; F
+
+[ Riffage ]
+octave = 2
+play Riff 1
+play Riff 2
+
++
+play Riff 1
+play Riff 2
+
++
+play Riff 1
+play Riff 2
+
++
+play Riff 1
+play Riff 2
+
+[ Loop ]
+tempo = 90
+play Riffage
+
+tempo = 60
+play Riffage
+
+tempo = 30
+play Riffage
+
+tempo = 60
+play Riffage
+
+[ Song ]
+duration = 64
+loop Loop

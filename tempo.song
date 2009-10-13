@@ -1,0 +1,20 @@
+# Brian Mock
+# Testing program
+
+tempo = 120;
+Cb, 4;
+C,  4;
+C#, 8; C#, 8;
+D,  4;
+
+tempo = 60;
+Cb, 4;
+C, 16; C, 16; C, 16; C, 16;
+C#, 4;
+D,  4;
+
+tempo = 90;
+Cb, 4;
+C,  4;
+C#, 8; C#, 8;
+D,  4;
