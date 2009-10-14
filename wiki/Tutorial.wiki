@@ -1,4 +1,5 @@
 #summary Tutorial at http://eight-beat.sf.net
+#labels Featured
 
 = http://eight-beat.sf.net =
 
