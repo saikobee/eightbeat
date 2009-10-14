@@ -1,0 +1,34 @@
+#labels Featured
+This program Copyright 2009 Brian Mock <mock.brian@gmail.com>
+
+This program licensed under the GNU GPL.
+
+If you don't understand what that is, Google search it or read COPYING.txt
+In a nutshell, this program is completely free and should be shared with as
+many people as possible.
+
+----
+
+Windows users:
+Drag a `.song` file onto `player.bat` to play. You must first install the Ruby
+programming language: http://ruby-lang.org
+
+----
+
+Linux users:
+Make sure Ruby is installed (hopefully your distro already did that...)
+In a terminal, run:
+{{{
+./8beat.rb SOME_SONG.song
+}}}
+For maximum performance, run (note the beep program must be installed)
+{{{
+./8beat.rb --beep SOME_SONG.song
+}}}
+This assumes beep is setuid root, if it is not then you may run
+{{{
+./8beat.rb --sudo --beep SOME_SONG.song
+}}}
+or simply run the script as root with the `--beep` option (not recommended).
+If you get tired of needing root privileges, there are ways to set up
+passwordless sudo that are beyond the scope if this help document
