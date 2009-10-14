@@ -260,7 +260,6 @@ class Synth
                     end
                 else
                     # Determine if the user is in a tty or not
-                    debug "freq =", freq
                     case ENV["TERM"]
                     when "linux"
                         system "setterm", "-blength", (len * 1_000).to_s
