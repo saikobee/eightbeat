@@ -1,3 +1,4 @@
+#summary Help with setting up the program
 #labels Featured
 This program Copyright 2009 Brian Mock <mock.brian@gmail.com>
 
