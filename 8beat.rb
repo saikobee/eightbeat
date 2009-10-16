@@ -16,10 +16,6 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 =end
 
-# TODO:
-# Difference in beeping types
-# to_i.to_s vs to_s
-
 case RUBY_PLATFORM
 when /mswin/
     require 'Win32API'
