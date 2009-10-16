@@ -256,12 +256,25 @@ class Synth
                     end
                 else
                     # Determine if the user is in a tty or not
+                    scale = 0.55
                     case ENV["TERM"]
                     when "linux"
-                        system "setterm", "-blength", (len * 1_000).to_s
-                        system "setterm", "-bfreq",    freq.to_s
+                        system(
+                            "setterm",
+                            "-blength", (len * 1_000 * scale).to_s
+                        )
+                        system(
+                            "setterm",
+                            "-bfreq", freq.to_s
+                        )
                     else
-                        system "xset", "b", 100.to_s, freq.to_i.to_s, (len * 1_000).to_i.to_s
+                        system(
+                            "xset",
+                            "b",
+                            100.to_s,
+                            freq.to_i.to_s,
+                            (len * 1_000 * scale).to_i.to_s
+                        )
                     end
                     print "\a"
                     sleep len
