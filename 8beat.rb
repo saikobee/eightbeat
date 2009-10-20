@@ -72,10 +72,10 @@ class Key
         self.to_s.downcase.hash
     end
 
-    def eql?(other)
-        self.to_s.downcase.eql? other.to_s.downcase
+    def ==(other)
+        self.to_s.downcase == other.to_s.downcase
     end
-    alias == eql?
+    alias eql? ==
 
     def to_s
         @sym.to_s
@@ -256,7 +256,7 @@ class Synth
                     end
                 else
                     # Determine if the user is in a tty or not
-                    scale = 0.55
+                    scale = 0.45
                     case ENV["TERM"]
                     when "linux"
                         system(
@@ -396,7 +396,9 @@ end
 def main
     synth = Synth.new
 
-    # Process command line args
+    # {{{ Process command line args
+    $options[:file] = "/dev/stdin"
+
     ARGV.each do |option|
         case option
         when "--sudo"
@@ -407,6 +409,7 @@ def main
             $options[:file] = option
         end
     end
+    # }}}
 
 
     section = "Song"
