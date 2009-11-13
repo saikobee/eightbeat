@@ -119,9 +119,9 @@ end
 def semitones(name)
     letter, sharp, octave = name2lso(name)
     mod = case sharp
-          when "b"; -1
-          when "#"; +1
-          else;      0
+          when "b" then -1
+          when "#" then +1
+          else           0
           end
     (octave.to_i * 12) + note_to_i(letter) + mod
 end
