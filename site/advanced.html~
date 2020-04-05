@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+    
+<head>
+<title>8-Beat: Music Synthesis</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+<div id="column" class="center">
+<div id="page" class="center">
+    
+<!--h1>8-Beat: Music Synthesis</h1-->
+<img src="banner.png" alt="8-Beat: Music Synthesis" id="banner">
+
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a href="basic.html">Basic Tutorial</a>
+  <a href="advanced.html" id="active">Advanced Tutorial</a>
+  <a href="faq.html">FAQ</a>
+</div>
+
+<!--h2>8-Beat Advanced Tutorial</h2-->
+
+<p>
+The advanced tutorial currently focuses on how to make triplets in 8-Beat.
+</p>
+
+<p>
+The following song has been written in standard sheet music form, and
+translated into 8-Beat notation. It should serve as an example of how to
+translate triplets into 8-Beat notation.
+</p>
+
+<h2>Blackmail the Universe by Megadeth</h2>
+
+<img src="triplets.png" alt="Blackmail the Universe sheet music">
+
+<code><pre class="code smaller-text"><span class="comment"># Song: Blackmail the Universe
+# Artist: Megadeth
+# Translated to 8-Beat by Jacob Lacey
+# (Transposed up an octave to help audibility)</span>
+tempo = 174 
+F#3, 6; F#3, 6; F#3, 12; E3,  12; F#3, 12; G3, 12; A3,  12; G3,  12; F#3, 12; E3,  12
+F#3, 6; F#3, 6; F#3, 12; E3,  12; F#3, 12; G3, 12; A3,  12; B3,  12; C4,  12; C#4, 12
+F#3, 6; F#3, 6; F#3, 12; E3,  12; F#3, 12; G3, 12; A3,  12; G3,  12; F#3, 12; E3,  12
+F#3, 6; F#3, 6; C4,  12; B3,  12; A3,  12; G3, 12; F#3, 12; E3,  12; F#3, 12; G3,  12
+G#3, 6; G#3, 6; G#3, 12; F#3, 12; G#3, 12; A3, 12; B3,  12; A3,  12; G#,  12; F#,  12
+G#3, 6; G#3, 6; G#3, 12; F#3, 12; G#3, 12; A3, 12; B3,  12; C#4, 12; D,   12; D#,  12
+G#3, 6; G#3, 6; G#3, 12; F#3, 12; G#3, 12; A3, 12; B3,  12; A3,  12; G#,  12; F#,  12
+G#3, 6; G#3, 6; R,    6; R,    2
+A#3, 6; A#3, 6; A#3, 12; G#3, 12; A#3, 12; B3, 12; C#4, 12; B3,  12; A#, 12; G#, 12
+A#3, 6; A#3, 6; A#3, 12; G#3, 12; A#3, 12; B3, 12; C#4, 12; D#4, 12; E4, 12; F4, 12
+A#3, 6; A#3, 6; A#3, 12; G#3, 12; A#3, 12; B3, 12; C#4, 12; B3,  12; A#, 12; G#, 12
+A#3, 6; A#3, 6; R,    6; R,    2
+</pre></code>
+
+<p>
+For triplets, multiply the note's base by 3 and divide by 2. For example, if
+you want to make eighth note triplets, 8*3 = 24, 24/2 = 12. If you want to
+make quarter note triplets, 4*3 = 12, 12/2 = 6. Triplets work this way in
+8-Beat because all note values are entered as their fraction of a whole note.
+</p>
+
+<div id="copyright">
+Copyright 2009 Brian Mock and Jacob Lacey
+</div>
+
+</div>
+</div>
+</body>
+
+</html>
+<!--
+vim: set noai sw=2 sts=2:
+-->
+

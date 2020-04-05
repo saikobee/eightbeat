@@ -1,0 +1,393 @@
+html,
+body {
+    background: #CCC;
+    background: url(check.png) repeat;
+
+    font-family: sans-serif;
+    font-size:   10pt;
+
+    padding: 0px;
+    margin:  0px;
+
+    height: 100%;
+    width:  100%;
+}
+
+img.border {
+    border: 1px solid #666;
+    padding: 5px;
+}
+
+a,
+a:link,
+a:active,
+a:hover,
+a:visited {
+    text-decoration: none;
+
+    color: #3465A4;
+
+    padding: 1px;
+    
+    /* This serves as padding so that the hovered border doesn't make the
+     * element jump around on the page
+     */
+    border: 1px solid transparent;
+}
+
+a:hover {
+    background: #D1DCE8;
+    border: 1px solid #A5B9CF;
+
+    -moz-border-radius:    6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius:  6px;
+    border-radius:         6px;
+}
+
+.center {
+    margin: auto;
+}
+
+.img-center,
+.text-center {
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    background: #3465A4;
+    color:      #FFF;
+
+    font-weight: bold;
+    font-size:   2.5em;
+    text-align:  center;
+
+    padding: 15px;
+    margin:  auto;
+}
+
+#banner {
+    vertical-align: bottom;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1em;
+    margin: 10px;
+}
+
+#column {
+    background: url(page.png) repeat-y;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 1.0em;
+    padding: 0px;
+    width: 748px;
+    border-collapse: collapse;
+
+    /* Needed to make column height work
+     * when using a <div>,
+     * seeing as <table> is not logical,
+     * but has the vertical properties we want
+     **/
+    display: table;
+    height: 100%;
+}
+
+ul {
+    list-style-type: disc;
+    list-style-image: url(bullet.png);
+}
+
+.right-align {
+    text-align: right;
+}
+
+table {
+    background: #C6DCAE;
+    border: 1px solid #AEC299;
+    padding: 0px;
+
+    border-spacing: 2px;
+
+    text-align: left;
+}
+
+td,
+th {
+    border: 1px solid transparent;
+    padding: 4px;
+}
+
+th {
+    border: 1px solid #ABCC6A;
+    background: #D5E5C3;
+}
+
+/*
+tr.odd > td {
+    border: 1px solid #ABCC6A;
+    background: #B8CCA1;
+}
+*/
+
+#page {
+    width: 700px;
+    height: 100%;
+    margin: auto;
+    padding: 0px;
+}
+
+#navbar {
+    background: #000;
+    color:      #FFF;
+
+    border-top:    0px solid #44A;
+    border-bottom: 1px solid #000;
+
+    width: 100%;
+
+    padding:        0px;
+    padding-top:    0px;
+    padding-bottom: 5px;
+
+    text-align: center;
+
+    margin-top: 0px;
+}
+
+#navbar a {
+    font-weight: bold;
+
+    height: 100%;
+
+    padding-top:     5px;
+    padding-bottom:  5px;
+    padding-left:   20px;
+    padding-right:  20px;
+
+    border-width: 0px;
+
+    background: transparent;
+    color:      #FFF;
+}
+
+#navbar #active {
+    background: #FFF;
+    color:      #000;
+
+    border-bottom: 1px solid #FFF;
+}
+
+#navbar * {
+    -moz-border-radius-topleft:     4px;
+    -moz-border-radius-topright:    4px;
+    -moz-border-radius-bottomleft:  0px;
+    -moz-border-radius-bottomright: 0px;
+
+    -webkit-border-top-left-radius:     4px;
+    -webkit-border-top-right-radius:    4px;
+    -webkit-border-bottom-left-radius:  0px;
+    -webkit-border-bottom-right-radius: 0px;
+
+    -khtml-border-top-left-radius:     4px;
+    -khtml-border-top-right-radius:    4px;
+    -khtml-border-bottom-left-radius:  0px;
+    -khtml-border-bottom-right-radius: 0px;
+
+    border-top-left-radius:     4px;
+    border-top-right-radius:    4px;
+    border-bottom-left-radius:  0px;
+    border-bottom-right-radius: 0px;
+}
+
+.TODO {
+    font-size: 1.5em;
+    font-weight: bold;
+    
+    color: #F00;
+    background: #FF0;
+    border: 1px solid #CC0;
+    padding: 1px;
+}
+
+.TODO:hover {
+    color: #FFF;
+}
+
+.round {
+    -moz-border-radius:    6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius:  6px;
+    border-radius:         6px;
+
+    padding: 4px;
+
+    border-style: solid;
+    border-spacing: 4px;
+}
+
+.round td,
+.round th {
+    -moz-border-radius:    6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius:  6px;
+    border-radius:         6px;
+
+    padding: 4px;
+
+    border-style: solid;
+}
+
+#navbar *:hover {
+    background: #BBB;
+    color:      #000;
+}
+
+.FIXME {
+    background: #C00;
+    color: #FFF;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+p,
+.code {
+    margin: 10px;
+    text-align: justify;
+}
+
+.indented {
+    margin:      10px;
+    margin-left: 20px;
+}
+
+.question {
+    font-weight: bold;
+}
+
+.question:before {
+    content: 'Q. '
+}
+
+.answer:before {
+    content: 'A. '
+}
+
+.code {
+    border-top:    1px solid #B9D69C;
+    border-bottom: 1px solid #B9D69C;
+
+    background: #DBF0C7;
+
+    margin:   0px;
+    padding: 10px; 
+
+    font-family: monospace;
+
+    white-space: pre-wrap;
+}
+
+.smaller-text {
+    font-size: 0.90em;
+}
+
+.snippet {
+    border: 1px solid #A3C97F;
+
+    background: #CFE2BC;
+
+    text-align: center;
+    font-size: 0.9em;
+    
+    padding: 1px; 
+
+    -moz-border-radius:    6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius:  6px;
+    border-radius:         6px;
+}
+
+h2 {
+    border-top:    1px solid #A3C97F;
+    border-bottom: 1px solid #A3C97F;
+
+    /* background: #ACE278; */
+    background: #B7E28E;
+    text-align: center;
+    padding: 10px; 
+
+    margin: 0px;
+
+    margin-top:    10px;
+    margin-bottom: 10px;
+
+    font-size: 1.1em;
+}
+
+.comment {
+    color: #5B8038;
+}
+
+h3 {
+    border-top:    1px solid #AAA;
+    border-bottom: 1px solid #AAA;
+
+    background: #EEE;
+    text-align: center;
+    padding: 10px; 
+
+    margin: 0px;
+
+    margin-top:    10px;
+    margin-bottom: 10px;
+
+    font-size: 0.80em;
+}
+
+div {
+    margin: 0px;
+}
+
+#copyright {
+    margin: auto;
+    padding: 5px;
+
+    font-size: 0.75em;
+    text-align: center;
+
+    color:      #888;
+    background: #EEE;
+
+    border-top:    1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+}
+
+#copyright * {
+    text-align: justify;
+}
+
+#copyright p {
+    margin-top:  10px;
+    margin-left:  0px;
+}
+
+.sideless-border {
+    margin: auto;
+
+    padding: 0px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    text-align: center;
+    width: 100%;
+
+    border-top:    1px solid #AAA;
+    border-bottom: 1px solid #AAA;
+}

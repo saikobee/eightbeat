@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+    
+<head>
+<title>8-Beat: Music Synthesis</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+<div id="column" class="center">
+<div id="page" class="center">
+    
+<!--h1>8-Beat: Music Synthesis</h1-->
+<img src="banner.png" alt="8-Beat: Music Synthesis" id="banner">
+
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a href="basic.html" id="active">Basic Tutorial</a>
+  <a href="advanced.html">Advanced Tutorial</a>
+  <a href="faq.html">FAQ</a>
+</div>
+
+<p>
+The following is a simple example of a song file for 8-Beat.
+If you have already downloaded the program, you can find the song in the 8beat
+folder. Songs tend to end with a .song extension, but .txt will work just as
+well.
+</p>
+
+<p>
+<code><pre class="code">tempo = 60
+A4 4
+C5 4
+C5 8; D5 8
+D5 8; R  8
+
+F5 16; E5 16; F5 16; E5 16
+F5 16; E5 16; C5  8
+C5  8; D5  8
+D5  8; R   8
+</pre></code>
+</p>
+
+<p>
+That was Iron Man by Black Sabbath. The syntax of
+8-beat is very straightforward. The first line sets the tempo to 60 quarter
+note beats per minute. The subsequent lines represent pitch values and
+durations. A4 means middle A. C#2 means C sharp in the second octave. Db6 means D
+flat in the sixth octave. The value after the note pitch is the note duration. A
+whole note is written as 1. A half note is written as 2. A quarter notes is
+written as 4, and so on. Don't forget, each note or tempo change is separated
+by a semicolon.
+</p>
+
+<p>
+Please note that the first line may also be written as <code class="snippet">tempo 60</code>
+instead of <code class="snippet">tempo = 60;</code>. That is to say, the equals sign after a
+tempo is optional, and semicolons are optional at the end of a line. This is
+because semicolons serve as separators between notes and tempo statements, not
+as the ending point of instruction (e.g. for programmers, the difference
+between semicolons in C and Python).
+</p>
+
+<p>
+If you want, you may write commas in to separate pitches from their note
+values, i.e. <code class="snippet">C4, 4</code> is the same as
+<code class="snippet">C4 4</code>, with spacing being entirely optional in the
+version  using a comma.
+</p>
+
+<h2>Relative Octaves</h2>
+
+<p>
+The above example shows a song using absolute octaves. The example below shows
+the different ways of using relative octaves.
+</p>
+
+<p>
+<code><pre class="code">tempo = 120
+
+octave = 4
+C 4; D 4; E 4; F 4; G 4; A 4; B 4
+
+octave up
+C 4; D 4; E 4; F 4; G 4; A 4; B 4
+
+octave down
+C 4; D 4; E 4; F 4; G 4; A 4; B 4
+
+octave 0
++; C 4; +; D 4; +; E 4; +; F 4; +; G 4; +; A 4; +; B 4
+-; C 4; -; D 4; -; E 4; -; F 4; -; G 4; -; A 4; -; B 4
+
+Octave=4
+C 16; OCTAVE=5; C 16; +++; C 16 --; C 16
+</pre>
+</code>
+</p>
+
+<p>
+This example is obviously a little less pretty, but it displays the
+flexibility of 8-Beat's syntax. Spacing is irrelevant in octave directives,
+just like tempo directives, and equals signs are optional. Octaves may be
+specified absolutely such as <code class="snippet">octave = 4</code> or
+relatively, such as <code class="snippet">octave up</code>,
+<code class="snippet">octave down</code>, <code class="snippet">+</code>,
+or <code class="snippet">-</code>.
+</p>
+
+<h2>Implied Duration</h2>
+
+<p>
+The last basic feature to cover is implied note durations. Whenever you fail
+to mention the duration of a note, 8-Beat will assume what you mean. At the
+beginning of a song, the duration of notes is assumed to be quarter note
+length. This can be changed at any point throughout the song, just like octave
+or tempo. See the example below.
+</p>
+
+<p>
+<code><pre class="code">C; D; E; F; G; A; B
+
+duration = 16
+C; D; E; F; G; A; B
+
+duration = 32
+C; D; E; F; G; A; B
+
+C; D; E; duration=16; G; A; B
+</pre>
+</code>
+</p>
+
+<p>
+It may be worth noting that in this last example, the final G, A, and B notes
+are played with a sixteenth note duration, whereas the C, D, and E notes
+before it are thirty-second notes.
+</p>
+
+<p>
+Feel like you've got it down? Then head over to the <a href="advanced.html">Advanced Tutorial</a>
+</p>
+
+<div id="copyright">
+Copyright 2009 Brian Mock, Jacob Lacey, and <a href="http://tonydickinson.net">Tony Dickinson</a>
+</div>
+
+</div>
+</div>
+</body>
+
+</html>
+<!--
+vim: set noai sw=2 sts=2:
+-->

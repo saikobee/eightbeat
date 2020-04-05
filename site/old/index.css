@@ -1,0 +1,79 @@
+.eight-beat {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: larger;
+}
+
+code {
+    font-weight: bold;
+}
+
+.copyright {
+    color: #888;
+}
+
+h1 {
+    color: #FFF;
+    background: #88F;
+    border: 1px solid #44A;
+    font-size: x-large;
+}
+
+h2 {
+    font-size: large;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	display: inline;
+}
+
+body {
+    text-align: justify;
+
+    margin-left:   auto;
+    margin-right:  auto;
+    margin-top:    0px;
+    margin-bottom: 0px;
+
+    background: #CCC;
+    color: #000;
+
+    width: 700px;
+}
+
+.wide {
+    width: 100%;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#column {
+    border-collapse: collapse;
+    margin: 0px;
+
+    background: #FFF;
+    color: #000;
+
+    border-left:  1px solid #AAA;
+    border-right: 1px solid #AAA;
+
+    height: 100%;
+}
+
+table#column * {
+    padding: 8px;
+}
+
+table#column tr,
+table#column td {
+}

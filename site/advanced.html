@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+    
+<head>
+<title>8-Beat &gt; Advanced Tutorial</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+<div id="column" class="center">
+<div id="page" class="center">
+    
+<!--h1>8-Beat: Music Synthesis</h1-->
+<img src="banner.png" alt="8-Beat: Music Synthesis" id="banner">
+
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a href="basic.html">Basic Tutorial</a>
+  <a href="advanced.html" id="active">Advanced Tutorial</a>
+  <a href="faq.html">FAQ</a>
+</div>
+
+<!--h2>8-Beat Advanced Tutorial</h2-->
+
+<p>
+The advanced tutorial focuses on how to make triplets and tied notes in 8-Beat.
+</p>
+
+<p>
+The following song has been written in standard sheet music form, and
+translated into 8-Beat notation. It should serve as an example of how to
+translate triplets and tied notes into 8-Beat notation.
+</p>
+
+<h2>Blackmail the Universe by Megadeth</h2>
+
+<img src="triplets.png" alt="Blackmail the Universe sheet music">
+
+<code><pre class="code"><span class="comment"># Song: Blackmail the Universe
+# Artist: Megadeth
+# Translated to 8-Beat by Jacob Lacey
+# (Transposed up an octave to help audibility)</span>
+tempo    = 174 
+octave   = 3
+duration = 12
+F# 12+12; F# 12+12;    F#;    E;  F#; G; A;     G;     F#; E; 
+F# 12+12; F# 12+12;    F#;    E;  F#; G; A;     B;  +; C;  C#; -;
+F# 12+12; F# 12+12;    F#;    E;  F#; G; A;     G;     F#; E; 
+F# 12+12; F# 12+12; +; C;  -; B;  A;  G; F#;    E;     F#; G; 
+G# 12+12; G# 12+12;    G#;    F#; G#; A; B;     A;     G#; F#;
+G# 12+12; G# 12+12;    G#;    F#; G#; A; B;  +; C#; -; D;  D#;
+G# 12+12; G# 12+12;    G#;    F#; G#; A; B;     A;     G#; F#;
+G# 12+12; G# 12+12;    R 6;   R 2;
+A# 12+12; A# 12+12;    A#;    G#; A#; B; +; C#; -; B;  A#; G#;
+A# 12+12; A# 12+12;    A#;    G#; A#; B; +; C#;    D#; E;  F;  -;
+A# 12+12; A# 12+12;    A#;    G#; A#; B; +; C#; -; B;  A#; G#;
+A# 12+12; A# 12+12;    R 6;   R 2
+</pre></code>
+
+<p>
+Tuplet note values are calculated as follows: (note duration) * (tuplet / 4)
+So, for example:
+</p>
+
+<ul>
+  <li>An eighth note quadruplet would be 8 * (4/4) = 8.</li>
+  <li>A sixteenth note quintuplet would be 16 * (5/4) = 20.</li>
+  <li>A quarter note triplet would be 4 * (6/4) = 6.</li>
+</ul>
+
+<p>
+Notice the last one? Triplets and sextuplets are synonymous, but sextuplets
+must be used for the formula to make sense. If this is confusing, just
+remember that for triplets you add half. As in, a quarter note triplet would
+be 4 + 4(1/2) = 6.
+</p>
+
+<p>
+For tied notes, the notation is even easier. Simply join multiple note length
+values with plus signs. For example, the beginning of this music is
+<code class="snippet">F# 12+12</code>. As shown above, 12 represents an
+eight note triplet, so this is a tied pair of two eight note triplets.
+Similarly, <code class="snippet">C 4+8+16</code> would represent a note whose
+duration is that of a quarter note, eighth note, and sixteenth note combined.
+</p>
+
+<p>
+Feel like messing around?
+Then take the code above and modify the tempo and octave settings.
+Play the file with these new settings for a bucket of laughs at how silly
+things sound in the wrong octave or at the wrong tempo (or both!).
+</p>
+
+<div id="copyright">
+Copyright 2009 Brian Mock, Jacob Lacey, and <a href="http://tonydickinson.net">Tony Dickinson</a>
+</div>
+
+</div>
+</div>
+</body>
+
+</html>
+<!--
+vim: set noai sw=2 sts=2:
+-->
+
